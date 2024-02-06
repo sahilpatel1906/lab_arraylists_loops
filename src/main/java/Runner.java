@@ -100,9 +100,10 @@ public class Runner {
 //          So [2, 7, 13, 2] would have sum of 9.
         sum = 0;
         for (int number : numbers) {
-            sum  += number;
             if (number == 13) {
                 break;
+            } else {
+                sum  += number;
             }
         }
         System.out.println("Sum of numbers in list is: " + sum);
